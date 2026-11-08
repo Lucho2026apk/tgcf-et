@@ -1,0 +1,26 @@
+TGCF (E.T) - paquete web instalable
+===================================
+
+Contenido: index.html (la app), manifest.webmanifest, sw.js (uso sin conexión), _headers (ajustes de Netlify) e iconos. En total 10 archivos.
+
+PASO 1 - Alojarlo gratis (elige uno)
+  Netlify:  entra en app.netlify.com/drop, arrastra esta carpeta (descomprimida)
+            y te dará una dirección https://....netlify.app
+  GitHub Pages: crea un repositorio, sube todos los archivos y activa Pages
+            en Settings > Pages.
+  Importante: la dirección tiene que ser https.
+
+PASO 2 - Instalarla en el móvil sin APK
+  Abre la dirección en Chrome > menú (tres puntos) > "Instalar aplicación"
+  o "Añadir a pantalla de inicio". Se instala con el icono y sin barra del navegador.
+
+PASO 3 - (Opcional) Generar el APK
+  Entra en pwabuilder.com, pega tu dirección https, pulsa "Package for stores"
+  > Android y descarga el paquete. Pásalo al móvil e instálalo
+  (hay que permitir "instalar apps de orígenes desconocidos").
+
+Para actualizar la app: sustituye index.html y cambia el número de versión
+en sw.js (const C='tgcf-et-v8' -> v9).
+
+Los perfiles y marcas se guardan en el propio dispositivo (localStorage); los de la
+versión alojada en claude.ai no se copian automáticamente.
